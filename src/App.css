@@ -1,38 +1,309 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.banner{
+    width: 100%;
+    /* height: 100vh;   */
+    background: url("./../src/img/brenna-huff-22Vt7JIf7ZI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+.banner_text {
+    width: 500px;
+}
+.banner_text h3{
+    font-size: 50px;
+    color: wheat;
+}
+.banner_text h1{
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 900;
+}
+.banner_text p{
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.navbar{
+    position: flex;
+    top: 0;
+    left: 0;
+   width: 100%;
+}
+.navbar_text{
+    display: flex;
+    height: 60px;
+    align-items: inherit;
+}
+.navbar_ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 1%;
+}
+.navbar_ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.logo{
+    width: 40%;
+}
+.logo img{
+    width: 220px; 
+    margin-left: 40px; 
+}
+.banner_btn{
+    margin-top: 35px;
+}
+.btn {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 20px 40px;
+}
+.btn-smart{
+    background: rgb(255, 69, 79);
+}
+.about{
+    padding: 80px 0;
+}
+.row{
+    width: 100%;
+    display: flex;
+}
+.col-6{
+    width: 50%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33333333333333%;
+}
+.p-25{
+    padding: 45px;
+}
+.about h3{
+    color: rgba(37, 37, 37, 0.7);
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.about h1{
+    font-size: 40px;
+    color: #252525;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.about p{
+    font-size: 18px;
+    color: #8b8b8b;
+    font-weight: 300;
+}
+.about_btn{
+    margin-top: 35px;
+}
+.about_img{
+    width: 100%;
+    overflow: hidden;
+}
+.about_img img{
+    width: 100%;
+}
+.shop{
+    width: 100%;
+    background: url("./img//pizza2.jpg");
+    height: 450px;
+    background-attachment: fixed;
+}
+.shop_text{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: center;
+    margin: 0 auto;
+    color:yellow;
+}
+.shop_text h1{
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+.shop_btn {
+    margin-top: 30px;
+}
+.clients{
+    width: 100%;
+    padding: 100px 0;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.client{
+    text-align: center;
+}
+.client h1{
+    font-style: 45px;
+}
+.client p{
+    font-style: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.prices{
+    width: 100%;
+    padding: 80px 0;
+    background-size: cover;
+}
+.price{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.price_img{
+    width: 100%;
+}
+.price_img img{
+    width: 250px;
+}
+.price_heading{
+    margin-top: 15px;
+    color: #0c0000;
+    font-size: 25px;
+    font-weight: 700;
+}
+.price_rs{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.price_text {
+    color: #888888;
+}
+.price_rs{
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media(max-width: 1200px){
+    .navbar_text{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .container{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .banner_text {
+        width: auto;
+    }
+    .banner_text h3{
+        font-size: 25px !important;
+        color: wheat;
+    }
+    .banner_text h1{
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 900;
+        margin-top: 20px;
+    }
+    .banner_text p{
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    .navbar_ul{
+        width: 100%;
+        justify-content: center;    }
+    .navbar_ul li a{
+        text-decoration: none;
+        color: white;
+        padding: 0 10px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .col-3,.col-6,.col-4{
+        width: 100%;
+    }
+    .client{
+        margin: 20px 0;
+    }
+    .about h1{
+        font-size: 25px;
+    }
+    .shop h1{
+        font-size: 25px;
+    }
+    .manu h1{
+        font-size: 25px;
+    }
+    .prices{
+        width: 100%;
+        padding: 80px 0;
+        background-size: cover;
+    }
+    .price{
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .price_img{
+        width: 100%;
+    }
+    .price_img img{
+        width: 100px;
+    }
+    .price_heading{
+        margin-top: 15px;
+        color: #0c0000;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .price_rs{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .price_text {
+        color: #888888;
+    }
+    .price_rs{
+        color: black;
+    }
 }
